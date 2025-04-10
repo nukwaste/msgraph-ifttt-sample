@@ -21,7 +21,7 @@ This project consists of a pre-built node.js service that is ready to integrate 
 To learn more about what the service can do, follow the [project setup instructions](docs/project-setup.md) then visit http://localhost:8080/ to try the service out for yourself!
 
 If you plan on implementing your own triggers and actions with this code, here's some interesting tidbits that may make this much easier.
-- We have provided some simple base classes that will automatically format the responses to IFTTT in a way that meets their requirements. These classes are the [trigger response class](src\models\trigger-response-model.ts) and the [options response class](src\models\options-response-model.ts). They will format the JSON payload back to IFTTT correctly with little effort on your part.
+- We have provided some simple base classes that will automatically format the responses to IFTTT in a way that meets their requirements. These classes are the [trigger response class](src/models/trigger-response-model.ts) and the [options response class](src/models/options-response-model.ts). They will format the JSON payload back to IFTTT correctly with little effort on your part.
 - We have provided a [Graph Client class](src/helpers/graph-client.ts) that allows you to use the official Graph SDK in your classes. This takes the incoming auth key from IFTTT and creates a custom provider for the Graph Client to use.
 - There is also some [middleware](src/helpers/middleware.ts) for use in the responses to IFTTT that will ease the work of checking things like Service Key and Auth Key validation.
 
